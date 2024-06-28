@@ -1,0 +1,51 @@
+/* Apply a border to the entire table */
+table {
+    width: 100%;
+    border-collapse: collapse; /* Ensures that the table borders are collapsed into a single border */
+    margin: 20px 0; /* Adds some margin around the table */
+    font-family: 'Roboto', sans-serif; /* Applies the Roboto font */
+    font-size: 16px; /* Sets the font size */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Adds a shadow to the table */
+  }
+  
+  /* Apply styles to the table headers */
+  th, td {
+    padding: 12px; /* Adds padding to the table cells */
+    text-align: left; /* Aligns text to the left */
+    border-bottom: 1px solid #ddd; /* Adds a border to the bottom of each cell */
+  }
+  
+  /* Apply a background color to the header */
+  th {
+    background-color: #f2f2f2; /* Sets the background color for the header */
+    color: #333; /* Sets the text color for the header */
+    font-weight: bold; /* Makes the header text bold */
+  }
+  
+  /* Add a hover effect to table rows */
+  tr:hover {
+    background-color: #f5f5f5; /* Changes the background color on hover */
+  }
+  
+  /* Alternate row colors */
+  tr:nth-child(even) {
+    background-color: #f9f9f9; /* Sets a different background color for even rows */
+  }
+  
+  /* Apply styles to the button */
+  button {
+    padding: 10px 20px; /* Adds padding to the button */
+    margin-top: 20px; /* Adds some margin above the button */
+    background-color: #4CAF50; /* Sets the background color */
+    color: white; /* Sets the text color */
+    border: none; /* Removes the border */
+    border-radius: 5px; /* Adds rounded corners */
+    cursor: pointer; /* Changes the cursor to a pointer */
+    transition: background-color 0.3s; /* Adds a transition effect */
+  }
+  
+  /* Change the button color on hover */
+  button:hover {
+    background-color: #45a049; /* Changes the background color on hover */
+  }
+  
