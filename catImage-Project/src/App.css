@@ -1,0 +1,86 @@
+/* src/app.css */
+
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  background-color: #f0f0f0;
+  background-attachment: fixed;
+}
+
+h1 {
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 4em; 
+  color: #f0f0f0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-image: url('/home/ubundu/catImage-Project/04f28aa4a5d5d4cedc6a2e4343ccc02b.jpg'); /* Adjust the path accordingly */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+#root {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.App {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(196, 156, 130, 0.8); /* Semi-transparent background */
+  color: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.App-header {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  background-color: #c4948b;
+  border: none;
+  border-radius: 5px;
+  margin-top: 20px;
+  color: #332e2a;
+  margin: auto; /* Center the button horizontally */
+  display: block; /* Ensure the button takes up full width available */
+}
+
+#cat-image-container {
+  max-height: 70vh; /* Set a maximum height for the container */
+  overflow: auto; /* Allow scrolling if content overflows */
+  margin-top: 20px;
+  width: 100%;
+}
+
+#cat-image-container img {
+  max-width: 100%; /* Ensure the image fits within the container */
+  max-height: 300px; /* Set a maximum height for the image */
+  height: auto;
+  border-radius: 10px;
+}
+
+#cat-image-container p {
+  color: red;
+  font-size: 18px;
+}
