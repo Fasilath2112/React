@@ -1,11 +1,13 @@
-import axios from 'axios';
+import axios from "axios";
+
+const url = import.meta.env.VITE_API_URL
 
 const instance = axios.create({
-  baseURL: 'https://api.thecatapi.com/v1/',
+  baseURL: url ,
 });
 
 export const fetchCatImage = () => {
-  return instance.get('images/search').then(
+  return instance.get("images/search").then(
     (res) => res.data,
     (error) => {
       console.log(error, "Error fetching cat image!");

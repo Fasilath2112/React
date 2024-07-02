@@ -1,4 +1,4 @@
-/* src/app.css */
+
 
 html, body {
   height: 100%;
@@ -20,7 +20,7 @@ body {
   justify-content: center;
   align-items: center;
   height: 100vh;
-  background-image: url('/home/ubundu/catImage-Project/04f28aa4a5d5d4cedc6a2e4343ccc02b.jpg'); /* Adjust the path accordingly */
+  background-image: url('/home/ubundu/React/catImage-Project/04f28aa4a5d5d4cedc6a2e4343ccc02b.jpg'); 
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -39,7 +39,7 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: rgba(196, 156, 130, 0.8); /* Semi-transparent background */
+  background-color: rgba(196, 156, 130, 0.8); 
   color: white;
   padding: 20px;
   border-radius: 10px;

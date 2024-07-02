@@ -1,7 +1,9 @@
-import '../../App.css'; 
-import { useEffect } from 'react';
-import { useDispatch, useSelector } from 'react-redux';
-import { fetchCatImageAsync, selectCatImage } from '../../store/catsl';
+import "../../App.css";
+import { useEffect } from "react";
+import { useDispatch, useSelector } from "react-redux";
+import { fetchCatImageAsync, selectCatImage } from "../../store/catsl";
+import Stack from "@mui/material/Stack";
+import Button from "@mui/material/Button";
 
 const Dashboard = () => {
   const dispatch = useDispatch();
@@ -19,8 +21,12 @@ const Dashboard = () => {
   return (
     <div className="App">
       <h1>Cat Image Fetcher</h1>
-      <button onClick={fetchNewCatImage}>New Image</button>
-      {isLoading === 'loading' ? (
+      <Stack spacing={2} direction="row" justifyContent="center">
+        <Button variant="contained" onClick={fetchNewCatImage}>
+          New Image
+        </Button>
+      </Stack>
+      {isLoading === "loading" ? (
         <div>Loading...</div>
       ) : (
         <div id="cat-image-container">
@@ -32,3 +38,7 @@ const Dashboard = () => {
 };
 
 export default Dashboard;
+
+
+
+
